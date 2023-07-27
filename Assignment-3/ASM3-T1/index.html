@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoothie Order Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mishthaan Smoothie</h1>
+
+    <!-- Flavor Section -->
+    <section>
+      <h2>Choose Your Flavor</h2>
+      <form id="smoothieForm">
+        <label for="flavor">Select Flavor:</label>
+        <select id="flavor" required>
+          <option value="strawberry">Strawberry</option>
+          <option value="banana">Banana</option>
+          <option value="mango">Mango</option>
+          <option value="blueberry">Blueberry</option>
+          <option value="pineapple">Pineapple</option>
+          <option value="kiwi">Kiwi</option>
+        
+        </select>
+      </form>
+
+    </section>
+
+    <!-- Size Section -->
+    <section>
+      <h2>Choose Size</h2>
+      <form id="sizeForm">
+        <input type="radio" name="size" value="small" required>Small
+        <input type="radio" name="size" value="medium">Medium
+        <input type="radio" name="size" value="large">Large
+      </form>
+    </section>
+
+    <!-- Extras Section -->
+    <section>
+      <h2>Add Extras</h2>
+      <form id="extrasForm">
+        <input type="checkbox" name="extras" value="protein">Protein Powder
+        <input type="checkbox" name="extras" value="honey">Honey
+        <input type="checkbox" name="extras" value="peanutButter">Peanut Butter
+        <input type="checkbox" name="extras" value="spinach">Fresh Spinach
+        <input type="checkbox" name="extras" value="chiaSeeds">Chia Seeds
+        <input type="checkbox" name="extras" value="almondMilk">Almond Milk
+      </form>
+    </section>
+
+    <!-- Order Button -->
+    <button type="button" id="orderButton">Order Now</button>
+
+    <!-- Summary Section -->
+    <div id="summary">
+      <h2>Your Order Summary</h2>
+      <p>Flavor: <span id="summaryFlavor">Not selected</span></p>
+      <p>Size: <span id="summarySize">Not selected</span></p>
+      <p>Extras: <span id="summaryExtras">None</span></p>
+    </div>
+
+    <!-- Order Output -->
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
